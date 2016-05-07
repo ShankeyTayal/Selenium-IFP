@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="IFB" duration-ms="269243" started-at="2016-05-07T10:02:22Z" finished-at="2016-05-07T10:06:51Z">
+    <groups>
+      <group name="login_excel">
+        <method signature="LoginFromExcel.test_dashboard_VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="test_dashboard_VerifyLogin" class="login.LoginFromExcel"/>
+      </group> <!-- login_excel -->
+      <group name="AUTO_001">
+        <method signature="CheckLoginSuccess.test()[pri:0, instance:login.CheckLoginSuccess@725bef66]" name="test" class="login.CheckLoginSuccess"/>
+      </group> <!-- AUTO_001 -->
+      <group name="login">
+        <method signature="CheckLoginSuccess.test()[pri:0, instance:login.CheckLoginSuccess@725bef66]" name="test" class="login.CheckLoginSuccess"/>
+      </group> <!-- login -->
+      <group name="AUTO_0011">
+        <method signature="LoginFromExcel.test_dashboard_VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="test_dashboard_VerifyLogin" class="login.LoginFromExcel"/>
+      </group> <!-- AUTO_0011 -->
+    </groups>
+    <test name="Login" duration-ms="269243" started-at="2016-05-07T10:02:22Z" finished-at="2016-05-07T10:06:51Z">
+      <class name="login.LoginFromExcel">
+        <test-method status="PASS" signature="test_dashboard_VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="test_dashboard_VerifyLogin" duration-ms="48324" started-at="2016-05-07T15:33:31Z" data-provider="login" finished-at="2016-05-07T15:34:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_dashboard_VerifyLogin -->
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="closeWebDriver" is-config="true" duration-ms="157" started-at="2016-05-07T15:34:19Z" finished-at="2016-05-07T15:34:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDriver -->
+        <test-method status="PASS" signature="CaptureScreenShot()[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="CaptureScreenShot" is-config="true" duration-ms="3" started-at="2016-05-07T15:34:19Z" finished-at="2016-05-07T15:34:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CaptureScreenShot -->
+        <test-method status="PASS" signature="test_dashboard_VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="test_dashboard_VerifyLogin" duration-ms="44606" started-at="2016-05-07T15:34:19Z" data-provider="login" finished-at="2016-05-07T15:35:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_dashboard_VerifyLogin -->
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="closeWebDriver" is-config="true" duration-ms="142" started-at="2016-05-07T15:35:04Z" finished-at="2016-05-07T15:35:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDriver -->
+        <test-method status="PASS" signature="CaptureScreenShot()[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="CaptureScreenShot" is-config="true" duration-ms="0" started-at="2016-05-07T15:35:04Z" finished-at="2016-05-07T15:35:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CaptureScreenShot -->
+        <test-method status="PASS" signature="test_dashboard_VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="test_dashboard_VerifyLogin" duration-ms="61176" started-at="2016-05-07T15:35:04Z" data-provider="login" finished-at="2016-05-07T15:36:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mohitgupta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PAssword@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_dashboard_VerifyLogin -->
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="closeWebDriver" is-config="true" duration-ms="155" started-at="2016-05-07T15:36:05Z" finished-at="2016-05-07T15:36:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDriver -->
+        <test-method status="PASS" signature="CaptureScreenShot()[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="CaptureScreenShot" is-config="true" duration-ms="0" started-at="2016-05-07T15:36:05Z" finished-at="2016-05-07T15:36:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CaptureScreenShot -->
+        <test-method status="PASS" signature="test_dashboard_VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="test_dashboard_VerifyLogin" duration-ms="45931" started-at="2016-05-07T15:36:05Z" data-provider="login" finished-at="2016-05-07T15:36:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_dashboard_VerifyLogin -->
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="closeWebDriver" is-config="true" duration-ms="104" started-at="2016-05-07T15:36:51Z" finished-at="2016-05-07T15:36:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDriver -->
+        <test-method status="PASS" signature="CaptureScreenShot()[pri:0, instance:login.LoginFromExcel@1ae369b7]" name="CaptureScreenShot" is-config="true" duration-ms="2" started-at="2016-05-07T15:36:51Z" finished-at="2016-05-07T15:36:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CaptureScreenShot -->
+      </class> <!-- login.LoginFromExcel -->
+      <class name="login.CheckLoginSuccess">
+        <test-method status="PASS" signature="test()[pri:0, instance:login.CheckLoginSuccess@725bef66]" name="test" duration-ms="67748" started-at="2016-05-07T15:32:22Z" finished-at="2016-05-07T15:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="CaptureScreenShot()[pri:0, instance:login.CheckLoginSuccess@725bef66]" name="CaptureScreenShot" is-config="true" duration-ms="176" started-at="2016-05-07T15:33:30Z" finished-at="2016-05-07T15:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CaptureScreenShot -->
+        <test-method status="PASS" signature="closeWebDriver()[pri:0, instance:login.CheckLoginSuccess@725bef66]" name="closeWebDriver" is-config="true" duration-ms="231" started-at="2016-05-07T15:33:30Z" finished-at="2016-05-07T15:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDriver -->
+      </class> <!-- login.CheckLoginSuccess -->
+    </test> <!-- Login -->
+  </suite> <!-- IFB -->
+</testng-results>

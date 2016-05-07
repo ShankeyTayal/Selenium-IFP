@@ -1,0 +1,68 @@
+<project name="Ant build" basedir=".">
+	<!-- ========== Initialize Properties =================================== -->
+	
+	<!-- set global properties for build -->
+	<property name="basedir" value="." />
+	<property name="lib" value="${basedir}/lib" />
+	<property name="src" value="${basedir}/src" />
+	<property name="bin" value="${basedir}/bin" />
+	<property name="report-dir" value="${basedir}/Test-Report" />
+	<property name="testng-report-dir" value="${report-dir}/TestNGreport" />
+	<property name="XLST-report-dir" value="${report-dir}/XSLT_Reports" />
+	
+	<!-- ====== Set the classpath ====  -->
+	<path id="classpath">
+		<pathelement location="${bin}" />
+		<fileset dir="${lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<!-- Delete directories  -->
+	<target name="delete-dir">
+		<delete dir="${report-dir}" />
+	</target>
+	
+	<!-- Creating directories -->
+	<target name="create" depends="delete-dir">
+		<mkdir dir="${report-dir}" />
+	</target>
+	
+	<!-- Compile the java code from ${src} into ${bin} -->
+	<target name="compile" depends="create">
+		<javac srcdir="${src}" classpathref="classpath" includeAntRuntime="No" destdir="${bin}">
+	      <classpath>
+	        <pathelement location="lib/"/>
+	        <pathelement path="${java.class.path}/"/>
+	      </classpath>
+		</javac>	
+	<echo> /* Compiled Directory Classes */ </echo>
+	</target>
+	
+	<!-- Runs the file and generates Reportng report for TestNG-->
+	<taskdef name="testng" classname="org.testng.TestNGAntTask" classpathref="classpath" />
+	
+	<!-- To run all automation scripts -->
+	<target name="run-all" depends="compile">
+		<mkdir dir="${testng-report-dir}" />
+		<testng outputdir="${testng-report-dir}" classpathref="classpath" useDefaultListeners="true">
+			<xmlfileset dir="${basedir}/testNG-run" includes="testng-run.xml" />
+		</testng>
+	</target>
+	
+	<!-- To run login module automation scripts -->
+	<target name="run-login" depends="compile">
+		<mkdir dir="${testng-report-dir}" />
+		<testng outputdir="${testng-report-dir}" classpathref="classpath" useDefaultListeners="true">
+			<xmlfileset dir="${basedir}/testNG-run" includes="testng-login.xml" />
+		</testng>
+	</target>
+	
+	<!-- To run Dashboard module automation scripts -->
+	<target name="run-dashboard" depends="compile">
+		<mkdir dir="${testng-report-dir}" />
+		<testng outputdir="${testng-report-dir}" classpathref="classpath" useDefaultListeners="true">
+			<xmlfileset dir="${basedir}/testNG-run" includes="testng-dashboard.xml" />
+		</testng>
+	</target>
+</project>

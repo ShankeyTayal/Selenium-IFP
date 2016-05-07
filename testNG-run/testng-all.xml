@@ -1,0 +1,8 @@
+<suite name="IFB" verbose="1" >
+  <test name="All" >
+    <packages>
+      <package name="login" />
+      <package name="Dashboard" />
+   </packages>
+ </test>
+</suite>
